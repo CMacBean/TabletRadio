@@ -1,0 +1,812 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB11AA881A9E2B9700FC73B2 /* EffectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB11AA871A9E2B9700FC73B2 /* EffectsViewController.m */; };
+		EB1D041A1AB3378A00F443EF /* UITesterController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1D04191AB3378A00F443EF /* UITesterController.m */; };
+		EB20B2B51A91FE52002E0315 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB20B2B41A91FE52002E0315 /* CoreAudio.framework */; };
+		EB20B2B81A91FE6C002E0315 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB20B2B71A91FE6C002E0315 /* MediaPlayer.framework */; };
+		EB20B2BA1A91FE75002E0315 /* MediaToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB20B2B91A91FE75002E0315 /* MediaToolbox.framework */; };
+		EB20B2BC1A91FE82002E0315 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB20B2BB1A91FE82002E0315 /* AudioToolbox.framework */; };
+		EB20B2BE1A91FED9002E0315 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB20B2BD1A91FED9002E0315 /* QuartzCore.framework */; };
+		EB20B2C01A91FEE1002E0315 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB20B2BF1A91FEE1002E0315 /* UIKit.framework */; };
+		EB20B3261A9213D7002E0315 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB20B2C31A91FF67002E0315 /* CoreData.framework */; };
+		EB4AE1E11AA227970040FEDF /* delayEdit.m in Sources */ = {isa = PBXBuildFile; fileRef = EB4AE1E01AA227970040FEDF /* delayEdit.m */; };
+		EB4AE1E61AA23DAD0040FEDF /* eqEdit.m in Sources */ = {isa = PBXBuildFile; fileRef = EB4AE1E51AA23DAD0040FEDF /* eqEdit.m */; };
+		EB61820B1A93DB700036DF7F /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = EB61820A1A93DB700036DF7F /* Deck.m */; };
+		EB71D9631A8DFE9C008BDA11 /* TabletRadio.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB71D9611A8DFE9C008BDA11 /* TabletRadio.xcdatamodeld */; };
+		EB786B8B1AA9B71C00CB513A /* SortByController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB786B8A1AA9B71C00CB513A /* SortByController.m */; };
+		EB786B911AA9C3BB00CB513A /* LoadPlaylistSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = EB786B901AA9C3BB00CB513A /* LoadPlaylistSelector.m */; };
+		EB84310E1A921855003C16FF /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = EB84310D1A921855003C16FF /* Track.m */; };
+		EB84CF511A921AA000A3FEA2 /* TPCircularBuffer+AudioBufferList.c in Sources */ = {isa = PBXBuildFile; fileRef = EB84CF4E1A921AA000A3FEA2 /* TPCircularBuffer+AudioBufferList.c */; };
+		EB9791881AA4CD9200CCBD5F /* LoadURLView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9791871AA4CD9200CCBD5F /* LoadURLView.m */; };
+		EB97918A1AA4D48900CCBD5F /* LoadURLView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB9791891AA4D48900CCBD5F /* LoadURLView.xib */; };
+		EBA14EE31A9A549F00EE8283 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBA14EE21A9A549F00EE8283 /* ItemCell.xib */; };
+		EBA14EE61A9A556800EE8283 /* ItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA14EE51A9A556800EE8283 /* ItemCell.m */; };
+		EBA2EF111AA37100004906D3 /* compressorEdit.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA2EF101AA37100004906D3 /* compressorEdit.m */; };
+		EBA2EF141AA37B17004906D3 /* limiterEdit.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA2EF131AA37B17004906D3 /* limiterEdit.m */; };
+		EBA2EF171AA3808A004906D3 /* reverbEdit.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA2EF161AA3808A004906D3 /* reverbEdit.m */; };
+		EBA2EF1A1AA389B4004906D3 /* pitchEdit.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA2EF191AA389B4004906D3 /* pitchEdit.m */; };
+		EBAA89001A01352B00483868 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAA88FF1A01352B00483868 /* main.m */; };
+		EBAA89031A01352B00483868 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAA89021A01352B00483868 /* AppDelegate.m */; };
+		EBAA89061A01352B00483868 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAA89051A01352B00483868 /* ViewController.m */; };
+		EBAA890B1A01352B00483868 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBAA890A1A01352B00483868 /* Images.xcassets */; };
+		EBAA890E1A01352B00483868 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBAA890C1A01352B00483868 /* LaunchScreen.xib */; };
+		EBAA891A1A01352B00483868 /* Tablet_RadioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAA89191A01352B00483868 /* Tablet_RadioTests.m */; };
+		EBC4B1331A8E51A2002AAE09 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC4B1321A8E51A2002AAE09 /* AVFoundation.framework */; };
+		EBC4B1351A8E51AD002AAE09 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC4B1341A8E51AD002AAE09 /* Accelerate.framework */; };
+		EBC4FE8D1A911E8E00C15CD4 /* AEAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC4FE6F1A911E8E00C15CD4 /* AEAudioController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		EBC4FE8E1A911E8E00C15CD4 /* AEAudioController+Audiobus.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC4FE721A911E8E00C15CD4 /* AEAudioController+Audiobus.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		EBC4FE8F1A911E8E00C15CD4 /* AEAudioFilePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC4FE741A911E8E00C15CD4 /* AEAudioFilePlayer.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		EBC4FE901A911E8E00C15CD4 /* AEAudioFileWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC4FE761A911E8E00C15CD4 /* AEAudioFileWriter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		EBC4FE911A911E8E00C15CD4 /* AEUtilities.c in Sources */ = {isa = PBXBuildFile; fileRef = EBC4FE781A911E8E00C15CD4 /* AEUtilities.c */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		EBC4FE921A911E8E00C15CD4 /* AEBlockChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC4FE7A1A911E8E00C15CD4 /* AEBlockChannel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		EBC4FE931A911E8E00C15CD4 /* AEAudioUnitFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC4FE7C1A911E8E00C15CD4 /* AEAudioUnitFilter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		EBC4FE941A911E8E00C15CD4 /* AEAudioUnitChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC4FE7E1A911E8E00C15CD4 /* AEAudioUnitChannel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		EBC4FE951A911E8E00C15CD4 /* AEBlockFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC4FE801A911E8E00C15CD4 /* AEBlockFilter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		EBC4FE961A911E8E00C15CD4 /* AEBlockAudioReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC4FE821A911E8E00C15CD4 /* AEBlockAudioReceiver.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		EBC4FE971A911E8E00C15CD4 /* AEFloatConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC4FE841A911E8E00C15CD4 /* AEFloatConverter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		EBC4FE981A911E8E00C15CD4 /* AEAudioFileLoaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC4FE861A911E8E00C15CD4 /* AEAudioFileLoaderOperation.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		EBC4FE991A911E8E00C15CD4 /* TPCircularBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = EBC4FE871A911E8E00C15CD4 /* TPCircularBuffer.c */; };
+		EBC4FE9A1A911E8E00C15CD4 /* AEBlockScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC4FE8B1A911E8E00C15CD4 /* AEBlockScheduler.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		EBC4FEB11A911E9F00C15CD4 /* AEMixerBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC4FEA21A911E9F00C15CD4 /* AEMixerBuffer.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		EBC4FEB21A911E9F00C15CD4 /* AELimiter.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC4FEA41A911E9F00C15CD4 /* AELimiter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		EBC4FEB31A911E9F00C15CD4 /* AELimiterFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC4FEA61A911E9F00C15CD4 /* AELimiterFilter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		EBC4FEB41A911E9F00C15CD4 /* AEExpanderFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC4FEA81A911E9F00C15CD4 /* AEExpanderFilter.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		EBC4FEB51A911E9F00C15CD4 /* AEPlaythroughChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC4FEAA1A911E9F00C15CD4 /* AEPlaythroughChannel.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		EBC4FEB61A911E9F00C15CD4 /* AERecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC4FEAC1A911E9F00C15CD4 /* AERecorder.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		EBC4FEB81A9120CB00C15CD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC4FEB71A9120CB00C15CD4 /* Foundation.framework */; };
+		EBCB5D2B1AC245CD002ACA89 /* PLSItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCB5D2A1AC245CD002ACA89 /* PLSItem.m */; };
+		EBD028031A55D8C400919AC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD028021A55D8C400919AC6 /* Main.storyboard */; };
+		EBDCFF9A1A97614500AB5535 /* MySegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDCFF991A97614500AB5535 /* MySegmentedControl.m */; };
+		EBF1EF0B1A9797BA00CBBE6C /* PlaylistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF1EF0A1A9797BA00CBBE6C /* PlaylistViewController.m */; };
+		EBFDF20B1AAF509F006227B2 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFDF20A1AAF509F006227B2 /* SettingsViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBAA89141A01352B00483868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBAA88F21A01352B00483868 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBAA88F91A01352B00483868;
+			remoteInfo = "Tablet Radio";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB11AA861A9E2B9700FC73B2 /* EffectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EffectsViewController.h; sourceTree = "<group>"; };
+		EB11AA871A9E2B9700FC73B2 /* EffectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EffectsViewController.m; sourceTree = "<group>"; };
+		EB1D04181AB3378A00F443EF /* UITesterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITesterController.h; sourceTree = "<group>"; };
+		EB1D04191AB3378A00F443EF /* UITesterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITesterController.m; sourceTree = "<group>"; };
+		EB20B2B41A91FE52002E0315 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		EB20B2B71A91FE6C002E0315 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		EB20B2B91A91FE75002E0315 /* MediaToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaToolbox.framework; path = System/Library/Frameworks/MediaToolbox.framework; sourceTree = SDKROOT; };
+		EB20B2BB1A91FE82002E0315 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EB20B2BD1A91FED9002E0315 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EB20B2BF1A91FEE1002E0315 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EB20B2C31A91FF67002E0315 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EB3267261A856A31007E844B /* Tablet Radio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Tablet Radio.entitlements"; sourceTree = "<group>"; };
+		EB4AE1DF1AA227970040FEDF /* delayEdit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = delayEdit.h; sourceTree = "<group>"; };
+		EB4AE1E01AA227970040FEDF /* delayEdit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = delayEdit.m; sourceTree = "<group>"; };
+		EB4AE1E41AA23DAD0040FEDF /* eqEdit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eqEdit.h; sourceTree = "<group>"; };
+		EB4AE1E51AA23DAD0040FEDF /* eqEdit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = eqEdit.m; sourceTree = "<group>"; };
+		EB6182091A93DB700036DF7F /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		EB61820A1A93DB700036DF7F /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		EB71D9621A8DFE9C008BDA11 /* TabletRadio.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TabletRadio.xcdatamodel; sourceTree = "<group>"; };
+		EB786B891AA9B71C00CB513A /* SortByController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortByController.h; sourceTree = "<group>"; };
+		EB786B8A1AA9B71C00CB513A /* SortByController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortByController.m; sourceTree = "<group>"; };
+		EB786B8F1AA9C3BB00CB513A /* LoadPlaylistSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoadPlaylistSelector.h; path = ../LoadPlaylistSelector.h; sourceTree = "<group>"; };
+		EB786B901AA9C3BB00CB513A /* LoadPlaylistSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoadPlaylistSelector.m; path = ../LoadPlaylistSelector.m; sourceTree = "<group>"; };
+		EB84310C1A921855003C16FF /* Track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
+		EB84310D1A921855003C16FF /* Track.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Track.m; sourceTree = "<group>"; };
+		EB84CF4E1A921AA000A3FEA2 /* TPCircularBuffer+AudioBufferList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "TPCircularBuffer+AudioBufferList.c"; sourceTree = "<group>"; };
+		EB84CF4F1A921AA000A3FEA2 /* TPCircularBuffer+AudioBufferList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TPCircularBuffer+AudioBufferList.h"; sourceTree = "<group>"; };
+		EB9791861AA4CD9200CCBD5F /* LoadURLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoadURLView.h; path = ../LoadURLView.h; sourceTree = "<group>"; };
+		EB9791871AA4CD9200CCBD5F /* LoadURLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoadURLView.m; path = ../LoadURLView.m; sourceTree = "<group>"; };
+		EB9791891AA4D48900CCBD5F /* LoadURLView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadURLView.xib; sourceTree = "<group>"; };
+		EBA14EE21A9A549F00EE8283 /* ItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
+		EBA14EE41A9A556800EE8283 /* ItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCell.h; sourceTree = "<group>"; };
+		EBA14EE51A9A556800EE8283 /* ItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCell.m; sourceTree = "<group>"; };
+		EBA2EF0F1AA37100004906D3 /* compressorEdit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compressorEdit.h; sourceTree = "<group>"; };
+		EBA2EF101AA37100004906D3 /* compressorEdit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = compressorEdit.m; sourceTree = "<group>"; };
+		EBA2EF121AA37B17004906D3 /* limiterEdit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = limiterEdit.h; sourceTree = "<group>"; };
+		EBA2EF131AA37B17004906D3 /* limiterEdit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = limiterEdit.m; sourceTree = "<group>"; };
+		EBA2EF151AA3808A004906D3 /* reverbEdit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reverbEdit.h; sourceTree = "<group>"; };
+		EBA2EF161AA3808A004906D3 /* reverbEdit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = reverbEdit.m; sourceTree = "<group>"; };
+		EBA2EF181AA389B4004906D3 /* pitchEdit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pitchEdit.h; sourceTree = "<group>"; };
+		EBA2EF191AA389B4004906D3 /* pitchEdit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pitchEdit.m; sourceTree = "<group>"; };
+		EBAA88FA1A01352B00483868 /* Tablet Radio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tablet Radio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBAA88FE1A01352B00483868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBAA88FF1A01352B00483868 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EBAA89011A01352B00483868 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EBAA89021A01352B00483868 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EBAA89041A01352B00483868 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EBAA89051A01352B00483868 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EBAA890A1A01352B00483868 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EBAA890D1A01352B00483868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EBAA89131A01352B00483868 /* Tablet RadioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tablet RadioTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBAA89181A01352B00483868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBAA89191A01352B00483868 /* Tablet_RadioTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tablet_RadioTests.m; sourceTree = "<group>"; };
+		EBC4B1321A8E51A2002AAE09 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EBC4B1341A8E51AD002AAE09 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		EBC4FE6D1A911E8E00C15CD4 /* TheAmazingAudioEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheAmazingAudioEngine.h; sourceTree = "<group>"; };
+		EBC4FE6E1A911E8E00C15CD4 /* AEAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEAudioController.h; sourceTree = "<group>"; };
+		EBC4FE6F1A911E8E00C15CD4 /* AEAudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEAudioController.m; sourceTree = "<group>"; };
+		EBC4FE701A911E8E00C15CD4 /* AEAudioController+Audiobus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AEAudioController+Audiobus.h"; sourceTree = "<group>"; };
+		EBC4FE711A911E8E00C15CD4 /* AEAudioController+AudiobusStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AEAudioController+AudiobusStub.h"; sourceTree = "<group>"; };
+		EBC4FE721A911E8E00C15CD4 /* AEAudioController+Audiobus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AEAudioController+Audiobus.m"; sourceTree = "<group>"; };
+		EBC4FE731A911E8E00C15CD4 /* AEAudioFilePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEAudioFilePlayer.h; sourceTree = "<group>"; };
+		EBC4FE741A911E8E00C15CD4 /* AEAudioFilePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEAudioFilePlayer.m; sourceTree = "<group>"; };
+		EBC4FE751A911E8E00C15CD4 /* AEAudioFileWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEAudioFileWriter.h; sourceTree = "<group>"; };
+		EBC4FE761A911E8E00C15CD4 /* AEAudioFileWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEAudioFileWriter.m; sourceTree = "<group>"; };
+		EBC4FE771A911E8E00C15CD4 /* AEUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEUtilities.h; sourceTree = "<group>"; };
+		EBC4FE781A911E8E00C15CD4 /* AEUtilities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = AEUtilities.c; sourceTree = "<group>"; };
+		EBC4FE791A911E8E00C15CD4 /* AEBlockChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEBlockChannel.h; sourceTree = "<group>"; };
+		EBC4FE7A1A911E8E00C15CD4 /* AEBlockChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEBlockChannel.m; sourceTree = "<group>"; };
+		EBC4FE7B1A911E8E00C15CD4 /* AEAudioUnitFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEAudioUnitFilter.h; sourceTree = "<group>"; };
+		EBC4FE7C1A911E8E00C15CD4 /* AEAudioUnitFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEAudioUnitFilter.m; sourceTree = "<group>"; };
+		EBC4FE7D1A911E8E00C15CD4 /* AEAudioUnitChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEAudioUnitChannel.h; sourceTree = "<group>"; };
+		EBC4FE7E1A911E8E00C15CD4 /* AEAudioUnitChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEAudioUnitChannel.m; sourceTree = "<group>"; };
+		EBC4FE7F1A911E8E00C15CD4 /* AEBlockFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEBlockFilter.h; sourceTree = "<group>"; };
+		EBC4FE801A911E8E00C15CD4 /* AEBlockFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEBlockFilter.m; sourceTree = "<group>"; };
+		EBC4FE811A911E8E00C15CD4 /* AEBlockAudioReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEBlockAudioReceiver.h; sourceTree = "<group>"; };
+		EBC4FE821A911E8E00C15CD4 /* AEBlockAudioReceiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEBlockAudioReceiver.m; sourceTree = "<group>"; };
+		EBC4FE831A911E8E00C15CD4 /* AEFloatConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEFloatConverter.h; sourceTree = "<group>"; };
+		EBC4FE841A911E8E00C15CD4 /* AEFloatConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEFloatConverter.m; sourceTree = "<group>"; };
+		EBC4FE851A911E8E00C15CD4 /* AEAudioFileLoaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEAudioFileLoaderOperation.h; sourceTree = "<group>"; };
+		EBC4FE861A911E8E00C15CD4 /* AEAudioFileLoaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEAudioFileLoaderOperation.m; sourceTree = "<group>"; };
+		EBC4FE871A911E8E00C15CD4 /* TPCircularBuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = TPCircularBuffer.c; path = Library/TPCircularBuffer/TPCircularBuffer.c; sourceTree = "<group>"; };
+		EBC4FE881A911E8E00C15CD4 /* TPCircularBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPCircularBuffer.h; path = Library/TPCircularBuffer/TPCircularBuffer.h; sourceTree = "<group>"; };
+		EBC4FE891A911E8E00C15CD4 /* TheAmazingAudioEngine-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TheAmazingAudioEngine-Prefix.pch"; sourceTree = "<group>"; };
+		EBC4FE8A1A911E8E00C15CD4 /* AEBlockScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEBlockScheduler.h; sourceTree = "<group>"; };
+		EBC4FE8B1A911E8E00C15CD4 /* AEBlockScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEBlockScheduler.m; sourceTree = "<group>"; };
+		EBC4FEA11A911E9F00C15CD4 /* AEMixerBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AEMixerBuffer.h; path = Modules/AEMixerBuffer.h; sourceTree = "<group>"; };
+		EBC4FEA21A911E9F00C15CD4 /* AEMixerBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AEMixerBuffer.m; path = Modules/AEMixerBuffer.m; sourceTree = "<group>"; };
+		EBC4FEA31A911E9F00C15CD4 /* AELimiter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AELimiter.h; path = Modules/AELimiter.h; sourceTree = "<group>"; };
+		EBC4FEA41A911E9F00C15CD4 /* AELimiter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AELimiter.m; path = Modules/AELimiter.m; sourceTree = "<group>"; };
+		EBC4FEA51A911E9F00C15CD4 /* AELimiterFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AELimiterFilter.h; path = Modules/AELimiterFilter.h; sourceTree = "<group>"; };
+		EBC4FEA61A911E9F00C15CD4 /* AELimiterFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AELimiterFilter.m; path = Modules/AELimiterFilter.m; sourceTree = "<group>"; };
+		EBC4FEA71A911E9F00C15CD4 /* AEExpanderFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AEExpanderFilter.h; path = Modules/AEExpanderFilter.h; sourceTree = "<group>"; };
+		EBC4FEA81A911E9F00C15CD4 /* AEExpanderFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AEExpanderFilter.m; path = Modules/AEExpanderFilter.m; sourceTree = "<group>"; };
+		EBC4FEA91A911E9F00C15CD4 /* AEPlaythroughChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AEPlaythroughChannel.h; path = Modules/AEPlaythroughChannel.h; sourceTree = "<group>"; };
+		EBC4FEAA1A911E9F00C15CD4 /* AEPlaythroughChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AEPlaythroughChannel.m; path = Modules/AEPlaythroughChannel.m; sourceTree = "<group>"; };
+		EBC4FEAB1A911E9F00C15CD4 /* AERecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AERecorder.h; path = Modules/AERecorder.h; sourceTree = "<group>"; };
+		EBC4FEAC1A911E9F00C15CD4 /* AERecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AERecorder.m; path = Modules/AERecorder.m; sourceTree = "<group>"; };
+		EBC4FEB71A9120CB00C15CD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EBCB5D291AC245CD002ACA89 /* PLSItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLSItem.h; sourceTree = "<group>"; };
+		EBCB5D2A1AC245CD002ACA89 /* PLSItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLSItem.m; sourceTree = "<group>"; };
+		EBD028021A55D8C400919AC6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EBDCFF981A97614500AB5535 /* MySegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySegmentedControl.h; sourceTree = "<group>"; };
+		EBDCFF991A97614500AB5535 /* MySegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySegmentedControl.m; sourceTree = "<group>"; };
+		EBF1EF091A9797BA00CBBE6C /* PlaylistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistViewController.h; sourceTree = "<group>"; };
+		EBF1EF0A1A9797BA00CBBE6C /* PlaylistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaylistViewController.m; sourceTree = "<group>"; };
+		EBFDF2091AAF509F006227B2 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		EBFDF20A1AAF509F006227B2 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBAA88F71A01352B00483868 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB20B3261A9213D7002E0315 /* CoreData.framework in Frameworks */,
+				EB20B2C01A91FEE1002E0315 /* UIKit.framework in Frameworks */,
+				EB20B2BE1A91FED9002E0315 /* QuartzCore.framework in Frameworks */,
+				EB20B2BC1A91FE82002E0315 /* AudioToolbox.framework in Frameworks */,
+				EB20B2BA1A91FE75002E0315 /* MediaToolbox.framework in Frameworks */,
+				EB20B2B81A91FE6C002E0315 /* MediaPlayer.framework in Frameworks */,
+				EB20B2B51A91FE52002E0315 /* CoreAudio.framework in Frameworks */,
+				EBC4FEB81A9120CB00C15CD4 /* Foundation.framework in Frameworks */,
+				EBC4B1351A8E51AD002AAE09 /* Accelerate.framework in Frameworks */,
+				EBC4B1331A8E51A2002AAE09 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBAA89101A01352B00483868 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB4AE1E21AA2279E0040FEDF /* Effect editors */ = {
+			isa = PBXGroup;
+			children = (
+				EB4AE1DF1AA227970040FEDF /* delayEdit.h */,
+				EB4AE1E01AA227970040FEDF /* delayEdit.m */,
+				EB4AE1E41AA23DAD0040FEDF /* eqEdit.h */,
+				EB4AE1E51AA23DAD0040FEDF /* eqEdit.m */,
+				EBA2EF0F1AA37100004906D3 /* compressorEdit.h */,
+				EBA2EF101AA37100004906D3 /* compressorEdit.m */,
+				EBA2EF121AA37B17004906D3 /* limiterEdit.h */,
+				EBA2EF131AA37B17004906D3 /* limiterEdit.m */,
+				EBA2EF151AA3808A004906D3 /* reverbEdit.h */,
+				EBA2EF161AA3808A004906D3 /* reverbEdit.m */,
+				EBA2EF181AA389B4004906D3 /* pitchEdit.h */,
+				EBA2EF191AA389B4004906D3 /* pitchEdit.m */,
+			);
+			name = "Effect editors";
+			sourceTree = "<group>";
+		};
+		EB7E8FC61AAF0B49009A80D1 /* PopoverControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EB786B891AA9B71C00CB513A /* SortByController.h */,
+				EB786B8A1AA9B71C00CB513A /* SortByController.m */,
+				EB786B8F1AA9C3BB00CB513A /* LoadPlaylistSelector.h */,
+				EB786B901AA9C3BB00CB513A /* LoadPlaylistSelector.m */,
+			);
+			name = PopoverControllers;
+			sourceTree = "<group>";
+		};
+		EB7E8FC71AAF0B60009A80D1 /* MainViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EBAA89041A01352B00483868 /* ViewController.h */,
+				EBAA89051A01352B00483868 /* ViewController.m */,
+				EBF1EF091A9797BA00CBBE6C /* PlaylistViewController.h */,
+				EBF1EF0A1A9797BA00CBBE6C /* PlaylistViewController.m */,
+				EB11AA861A9E2B9700FC73B2 /* EffectsViewController.h */,
+				EB11AA871A9E2B9700FC73B2 /* EffectsViewController.m */,
+				EB1D04181AB3378A00F443EF /* UITesterController.h */,
+				EB1D04191AB3378A00F443EF /* UITesterController.m */,
+			);
+			name = MainViewControllers;
+			sourceTree = "<group>";
+		};
+		EBAA88F11A01352B00483868 = {
+			isa = PBXGroup;
+			children = (
+				EBAA88FC1A01352B00483868 /* Tablet Radio */,
+				EBAA89161A01352B00483868 /* Tablet RadioTests */,
+				EBC4B1371A8E59BE002AAE09 /* Frameworks */,
+				EBAA88FB1A01352B00483868 /* Products */,
+				EBC4FE8C1A911E8E00C15CD4 /* TheAmazingAudioEngine */,
+			);
+			sourceTree = "<group>";
+		};
+		EBAA88FB1A01352B00483868 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBAA88FA1A01352B00483868 /* Tablet Radio.app */,
+				EBAA89131A01352B00483868 /* Tablet RadioTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBAA88FC1A01352B00483868 /* Tablet Radio */ = {
+			isa = PBXGroup;
+			children = (
+				EB6182091A93DB700036DF7F /* Deck.h */,
+				EB61820A1A93DB700036DF7F /* Deck.m */,
+				EB3267261A856A31007E844B /* Tablet Radio.entitlements */,
+				EBE4E16E1A09317300F76130 /* Controllers */,
+				EBD028021A55D8C400919AC6 /* Main.storyboard */,
+				EBFDF2091AAF509F006227B2 /* SettingsViewController.h */,
+				EBFDF20A1AAF509F006227B2 /* SettingsViewController.m */,
+				EB4AE1E21AA2279E0040FEDF /* Effect editors */,
+				EBAA890A1A01352B00483868 /* Images.xcassets */,
+				EBAA890C1A01352B00483868 /* LaunchScreen.xib */,
+				EB9791891AA4D48900CCBD5F /* LoadURLView.xib */,
+				EB9791861AA4CD9200CCBD5F /* LoadURLView.h */,
+				EB9791871AA4CD9200CCBD5F /* LoadURLView.m */,
+				EBAA88FD1A01352B00483868 /* Supporting Files */,
+				EB71D9611A8DFE9C008BDA11 /* TabletRadio.xcdatamodeld */,
+				EBDCFF9B1A97615200AB5535 /* Database Classes */,
+				EBDCFF981A97614500AB5535 /* MySegmentedControl.h */,
+				EBDCFF991A97614500AB5535 /* MySegmentedControl.m */,
+				EBA14EE21A9A549F00EE8283 /* ItemCell.xib */,
+				EBA14EE41A9A556800EE8283 /* ItemCell.h */,
+				EBA14EE51A9A556800EE8283 /* ItemCell.m */,
+			);
+			path = "Tablet Radio";
+			sourceTree = "<group>";
+		};
+		EBAA88FD1A01352B00483868 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBAA89011A01352B00483868 /* AppDelegate.h */,
+				EBAA89021A01352B00483868 /* AppDelegate.m */,
+				EBAA88FE1A01352B00483868 /* Info.plist */,
+				EBAA88FF1A01352B00483868 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EBAA89161A01352B00483868 /* Tablet RadioTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBAA89191A01352B00483868 /* Tablet_RadioTests.m */,
+				EBAA89171A01352B00483868 /* Supporting Files */,
+			);
+			path = "Tablet RadioTests";
+			sourceTree = "<group>";
+		};
+		EBAA89171A01352B00483868 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBAA89181A01352B00483868 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EBC4B1371A8E59BE002AAE09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB20B2C31A91FF67002E0315 /* CoreData.framework */,
+				EB20B2BF1A91FEE1002E0315 /* UIKit.framework */,
+				EB20B2BD1A91FED9002E0315 /* QuartzCore.framework */,
+				EB20B2BB1A91FE82002E0315 /* AudioToolbox.framework */,
+				EB20B2B91A91FE75002E0315 /* MediaToolbox.framework */,
+				EB20B2B71A91FE6C002E0315 /* MediaPlayer.framework */,
+				EB20B2B41A91FE52002E0315 /* CoreAudio.framework */,
+				EBC4FEB71A9120CB00C15CD4 /* Foundation.framework */,
+				EBC4B1341A8E51AD002AAE09 /* Accelerate.framework */,
+				EBC4B1321A8E51A2002AAE09 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBC4FE8C1A911E8E00C15CD4 /* TheAmazingAudioEngine */ = {
+			isa = PBXGroup;
+			children = (
+				EBC4FEAD1A911E9F00C15CD4 /* Modules */,
+				EBC4FE6D1A911E8E00C15CD4 /* TheAmazingAudioEngine.h */,
+				EBC4FE6E1A911E8E00C15CD4 /* AEAudioController.h */,
+				EBC4FE6F1A911E8E00C15CD4 /* AEAudioController.m */,
+				EBC4FE701A911E8E00C15CD4 /* AEAudioController+Audiobus.h */,
+				EBC4FE711A911E8E00C15CD4 /* AEAudioController+AudiobusStub.h */,
+				EBC4FE721A911E8E00C15CD4 /* AEAudioController+Audiobus.m */,
+				EBC4FE731A911E8E00C15CD4 /* AEAudioFilePlayer.h */,
+				EBC4FE741A911E8E00C15CD4 /* AEAudioFilePlayer.m */,
+				EBC4FE751A911E8E00C15CD4 /* AEAudioFileWriter.h */,
+				EBC4FE761A911E8E00C15CD4 /* AEAudioFileWriter.m */,
+				EBC4FE771A911E8E00C15CD4 /* AEUtilities.h */,
+				EBC4FE781A911E8E00C15CD4 /* AEUtilities.c */,
+				EBC4FE791A911E8E00C15CD4 /* AEBlockChannel.h */,
+				EBC4FE7A1A911E8E00C15CD4 /* AEBlockChannel.m */,
+				EBC4FE7B1A911E8E00C15CD4 /* AEAudioUnitFilter.h */,
+				EBC4FE7C1A911E8E00C15CD4 /* AEAudioUnitFilter.m */,
+				EBC4FE7D1A911E8E00C15CD4 /* AEAudioUnitChannel.h */,
+				EBC4FE7E1A911E8E00C15CD4 /* AEAudioUnitChannel.m */,
+				EBC4FE7F1A911E8E00C15CD4 /* AEBlockFilter.h */,
+				EBC4FE801A911E8E00C15CD4 /* AEBlockFilter.m */,
+				EBC4FE811A911E8E00C15CD4 /* AEBlockAudioReceiver.h */,
+				EBC4FE821A911E8E00C15CD4 /* AEBlockAudioReceiver.m */,
+				EBC4FE831A911E8E00C15CD4 /* AEFloatConverter.h */,
+				EBC4FE841A911E8E00C15CD4 /* AEFloatConverter.m */,
+				EBC4FE851A911E8E00C15CD4 /* AEAudioFileLoaderOperation.h */,
+				EBC4FE861A911E8E00C15CD4 /* AEAudioFileLoaderOperation.m */,
+				EBC4FE871A911E8E00C15CD4 /* TPCircularBuffer.c */,
+				EBC4FE881A911E8E00C15CD4 /* TPCircularBuffer.h */,
+				EBC4FE891A911E8E00C15CD4 /* TheAmazingAudioEngine-Prefix.pch */,
+				EBC4FE8A1A911E8E00C15CD4 /* AEBlockScheduler.h */,
+				EBC4FE8B1A911E8E00C15CD4 /* AEBlockScheduler.m */,
+			);
+			name = TheAmazingAudioEngine;
+			path = AudioEngine/TheAmazingAudioEngine;
+			sourceTree = "<group>";
+		};
+		EBC4FEAD1A911E9F00C15CD4 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EBC4FEA11A911E9F00C15CD4 /* AEMixerBuffer.h */,
+				EBC4FEA21A911E9F00C15CD4 /* AEMixerBuffer.m */,
+				EBC4FEA31A911E9F00C15CD4 /* AELimiter.h */,
+				EBC4FEA41A911E9F00C15CD4 /* AELimiter.m */,
+				EBC4FEA51A911E9F00C15CD4 /* AELimiterFilter.h */,
+				EBC4FEA61A911E9F00C15CD4 /* AELimiterFilter.m */,
+				EBC4FEA71A911E9F00C15CD4 /* AEExpanderFilter.h */,
+				EBC4FEA81A911E9F00C15CD4 /* AEExpanderFilter.m */,
+				EBC4FEA91A911E9F00C15CD4 /* AEPlaythroughChannel.h */,
+				EBC4FEAA1A911E9F00C15CD4 /* AEPlaythroughChannel.m */,
+				EBC4FEAB1A911E9F00C15CD4 /* AERecorder.h */,
+				EBC4FEAC1A911E9F00C15CD4 /* AERecorder.m */,
+				EB84CF4E1A921AA000A3FEA2 /* TPCircularBuffer+AudioBufferList.c */,
+				EB84CF4F1A921AA000A3FEA2 /* TPCircularBuffer+AudioBufferList.h */,
+			);
+			name = Modules;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		EBDCFF9B1A97615200AB5535 /* Database Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EBCB5D291AC245CD002ACA89 /* PLSItem.h */,
+				EBCB5D2A1AC245CD002ACA89 /* PLSItem.m */,
+				EB84310C1A921855003C16FF /* Track.h */,
+				EB84310D1A921855003C16FF /* Track.m */,
+			);
+			name = "Database Classes";
+			sourceTree = "<group>";
+		};
+		EBE4E16E1A09317300F76130 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EB7E8FC71AAF0B60009A80D1 /* MainViewControllers */,
+				EB7E8FC61AAF0B49009A80D1 /* PopoverControllers */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBAA88F91A01352B00483868 /* Tablet Radio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBAA891D1A01352B00483868 /* Build configuration list for PBXNativeTarget "Tablet Radio" */;
+			buildPhases = (
+				EBAA88F61A01352B00483868 /* Sources */,
+				EBAA88F71A01352B00483868 /* Frameworks */,
+				EBAA88F81A01352B00483868 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tablet Radio";
+			productName = "Tablet Radio";
+			productReference = EBAA88FA1A01352B00483868 /* Tablet Radio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBAA89121A01352B00483868 /* Tablet RadioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBAA89201A01352B00483868 /* Build configuration list for PBXNativeTarget "Tablet RadioTests" */;
+			buildPhases = (
+				EBAA890F1A01352B00483868 /* Sources */,
+				EBAA89101A01352B00483868 /* Frameworks */,
+				EBAA89111A01352B00483868 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBAA89151A01352B00483868 /* PBXTargetDependency */,
+			);
+			name = "Tablet RadioTests";
+			productName = "Tablet RadioTests";
+			productReference = EBAA89131A01352B00483868 /* Tablet RadioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBAA88F21A01352B00483868 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Beanie;
+				TargetAttributes = {
+					EBAA88F91A01352B00483868 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = X8FHV3524F;
+						SystemCapabilities = {
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+						};
+					};
+					EBAA89121A01352B00483868 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = EBAA88F91A01352B00483868;
+					};
+				};
+			};
+			buildConfigurationList = EBAA88F51A01352B00483868 /* Build configuration list for PBXProject "Tablet Radio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBAA88F11A01352B00483868;
+			productRefGroup = EBAA88FB1A01352B00483868 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBAA88F91A01352B00483868 /* Tablet Radio */,
+				EBAA89121A01352B00483868 /* Tablet RadioTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBAA88F81A01352B00483868 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBA14EE31A9A549F00EE8283 /* ItemCell.xib in Resources */,
+				EBAA890E1A01352B00483868 /* LaunchScreen.xib in Resources */,
+				EBAA890B1A01352B00483868 /* Images.xcassets in Resources */,
+				EB97918A1AA4D48900CCBD5F /* LoadURLView.xib in Resources */,
+				EBD028031A55D8C400919AC6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBAA89111A01352B00483868 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBAA88F61A01352B00483868 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBC4FE961A911E8E00C15CD4 /* AEBlockAudioReceiver.m in Sources */,
+				EBC4FEB61A911E9F00C15CD4 /* AERecorder.m in Sources */,
+				EBC4FE951A911E8E00C15CD4 /* AEBlockFilter.m in Sources */,
+				EBCB5D2B1AC245CD002ACA89 /* PLSItem.m in Sources */,
+				EB84310E1A921855003C16FF /* Track.m in Sources */,
+				EBAA89061A01352B00483868 /* ViewController.m in Sources */,
+				EBC4FEB21A911E9F00C15CD4 /* AELimiter.m in Sources */,
+				EB9791881AA4CD9200CCBD5F /* LoadURLView.m in Sources */,
+				EBDCFF9A1A97614500AB5535 /* MySegmentedControl.m in Sources */,
+				EBC4FE981A911E8E00C15CD4 /* AEAudioFileLoaderOperation.m in Sources */,
+				EBC4FE9A1A911E8E00C15CD4 /* AEBlockScheduler.m in Sources */,
+				EBC4FE8D1A911E8E00C15CD4 /* AEAudioController.m in Sources */,
+				EBAA89031A01352B00483868 /* AppDelegate.m in Sources */,
+				EBA14EE61A9A556800EE8283 /* ItemCell.m in Sources */,
+				EB786B911AA9C3BB00CB513A /* LoadPlaylistSelector.m in Sources */,
+				EBC4FE941A911E8E00C15CD4 /* AEAudioUnitChannel.m in Sources */,
+				EB71D9631A8DFE9C008BDA11 /* TabletRadio.xcdatamodeld in Sources */,
+				EBC4FE971A911E8E00C15CD4 /* AEFloatConverter.m in Sources */,
+				EBAA89001A01352B00483868 /* main.m in Sources */,
+				EBC4FE8E1A911E8E00C15CD4 /* AEAudioController+Audiobus.m in Sources */,
+				EB11AA881A9E2B9700FC73B2 /* EffectsViewController.m in Sources */,
+				EB4AE1E11AA227970040FEDF /* delayEdit.m in Sources */,
+				EBA2EF111AA37100004906D3 /* compressorEdit.m in Sources */,
+				EBA2EF1A1AA389B4004906D3 /* pitchEdit.m in Sources */,
+				EB61820B1A93DB700036DF7F /* Deck.m in Sources */,
+				EBC4FE911A911E8E00C15CD4 /* AEUtilities.c in Sources */,
+				EB4AE1E61AA23DAD0040FEDF /* eqEdit.m in Sources */,
+				EBFDF20B1AAF509F006227B2 /* SettingsViewController.m in Sources */,
+				EBC4FEB11A911E9F00C15CD4 /* AEMixerBuffer.m in Sources */,
+				EBC4FE991A911E8E00C15CD4 /* TPCircularBuffer.c in Sources */,
+				EBF1EF0B1A9797BA00CBBE6C /* PlaylistViewController.m in Sources */,
+				EBC4FE921A911E8E00C15CD4 /* AEBlockChannel.m in Sources */,
+				EBC4FE901A911E8E00C15CD4 /* AEAudioFileWriter.m in Sources */,
+				EB84CF511A921AA000A3FEA2 /* TPCircularBuffer+AudioBufferList.c in Sources */,
+				EBC4FEB51A911E9F00C15CD4 /* AEPlaythroughChannel.m in Sources */,
+				EBC4FEB41A911E9F00C15CD4 /* AEExpanderFilter.m in Sources */,
+				EBA2EF141AA37B17004906D3 /* limiterEdit.m in Sources */,
+				EB1D041A1AB3378A00F443EF /* UITesterController.m in Sources */,
+				EBC4FE8F1A911E8E00C15CD4 /* AEAudioFilePlayer.m in Sources */,
+				EB786B8B1AA9B71C00CB513A /* SortByController.m in Sources */,
+				EBC4FEB31A911E9F00C15CD4 /* AELimiterFilter.m in Sources */,
+				EBA2EF171AA3808A004906D3 /* reverbEdit.m in Sources */,
+				EBC4FE931A911E8E00C15CD4 /* AEAudioUnitFilter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBAA890F1A01352B00483868 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBAA891A1A01352B00483868 /* Tablet_RadioTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBAA89151A01352B00483868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBAA88F91A01352B00483868 /* Tablet Radio */;
+			targetProxy = EBAA89141A01352B00483868 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EBAA890C1A01352B00483868 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBAA890D1A01352B00483868 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBAA891B1A01352B00483868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		EBAA891C1A01352B00483868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBAA891E1A01352B00483868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tablet Radio/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EBAA891F1A01352B00483868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tablet Radio/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EBAA89211A01352B00483868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tablet RadioTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tablet Radio.app/Tablet Radio";
+			};
+			name = Debug;
+		};
+		EBAA89221A01352B00483868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tablet RadioTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tablet Radio.app/Tablet Radio";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBAA88F51A01352B00483868 /* Build configuration list for PBXProject "Tablet Radio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBAA891B1A01352B00483868 /* Debug */,
+				EBAA891C1A01352B00483868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBAA891D1A01352B00483868 /* Build configuration list for PBXNativeTarget "Tablet Radio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBAA891E1A01352B00483868 /* Debug */,
+				EBAA891F1A01352B00483868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBAA89201A01352B00483868 /* Build configuration list for PBXNativeTarget "Tablet RadioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBAA89211A01352B00483868 /* Debug */,
+				EBAA89221A01352B00483868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EB71D9611A8DFE9C008BDA11 /* TabletRadio.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EB71D9621A8DFE9C008BDA11 /* TabletRadio.xcdatamodel */,
+			);
+			currentVersion = EB71D9621A8DFE9C008BDA11 /* TabletRadio.xcdatamodel */;
+			path = TabletRadio.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EBAA88F21A01352B00483868 /* Project object */;
+}

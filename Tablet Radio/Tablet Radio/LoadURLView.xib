@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoadURLView">
+            <connections>
+                <outlet property="descriptionInput" destination="t1d-fk-anZ" id="A6L-SE-V0g"/>
+                <outlet property="doneButton" destination="BQK-Q2-RLT" id="bcT-0J-dlW"/>
+                <outlet property="titleInput" destination="E2m-ii-fUw" id="BGN-3s-b1P"/>
+                <outlet property="typeInput" destination="jfx-kj-Zc2" id="znY-18-jSS"/>
+                <outlet property="view" destination="nzE-IH-4TW" id="uNQ-bg-Acq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="nzE-IH-4TW">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="487"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loadURLBckg" translatesAutoresizingMaskIntoConstraints="NO" id="HFa-c7-vUJ">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="487"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter description/artist here..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t1d-fk-anZ">
+                    <rect key="frame" x="104" y="164" width="273" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jfx-kj-Zc2">
+                    <rect key="frame" x="154" y="251" width="173" height="162"/>
+                </pickerView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQK-Q2-RLT">
+                    <rect key="frame" x="208" y="427" width="65" height="46"/>
+                    <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="20"/>
+                    <state key="normal" title="Done" backgroundImage="buttonUnselected">
+                        <color key="titleColor" red="0.96958636470000004" green="1" blue="0.98545355320000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="done:" destination="-1" eventType="touchUpInside" id="ccA-v1-De5"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter title here..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E2m-ii-fUw">
+                    <rect key="frame" x="104" y="81" width="273" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="340" y="84.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="buttonUnselected" width="95" height="33"/>
+        <image name="loadURLBckg" width="496" height="468"/>
+    </resources>
+</document>
