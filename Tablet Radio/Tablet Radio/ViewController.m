@@ -127,12 +127,15 @@
     [super viewDidLoad];
     [self setupFaders];
     [self setupPans];
+    //TAAE Controller setup
     self.controller = [[AEAudioController alloc] initWithAudioDescription:[AEAudioController nonInterleaved16BitStereoAudioDescription] inputEnabled:YES];
     _controller.preferredBufferDuration = 0.005;
     _controller.useMeasurementMode = YES;
     [_controller start:NULL];
+    //Main controller for audio
     self.mainGroup = [_controller createChannelGroup];
     [self setupMic];
+    //Setup for decks
     self.deck1 = [[Deck alloc] initWithController:_controller andTag:0];
     self.deck1.mainGroup = self.mainGroup;
     self.deck1.group = [_controller createChannelGroupWithinChannelGroup:self.mainGroup];
@@ -149,11 +152,11 @@
     self.selectedChannel = self.deck1;
     self.selectedSection = @"Music";
 
-    //Music
     myTableView.allowsMultipleSelectionDuringEditing = NO;
     
     myTableView.backgroundColor = [UIColor clearColor];
     
+    //Defaults setup
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     self.playlists = [NSMutableArray arrayWithArray:[defaults objectForKey:@"playlists"]];
     self.loadedPlaylist = [defaults objectForKey:@"loadedPlaylist"];
@@ -173,6 +176,7 @@
 }
 
 - (void)setupFaders {
+    //Create and add faders to main view
     self.Fader1 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [self.Fader1 setBackgroundImage:[UIImage imageNamed:@"faderButton"] forState:UIControlStateNormal];
     self.Fader1.frame = CGRectMake(42, 594, 77, 42);
@@ -211,6 +215,8 @@
 {
     self.fetchedResultsController = nil;
     self.selectedSection = [self.segmentedController titleForSegmentAtIndex:self.segmentedController.selectedSegmentIndex];
+    
+    //Hide plus button if not on music section
     if (self.segmentedController.selectedSegmentIndex == 1) {
         self.plussButton.hidden = NO;
     } else {
@@ -222,6 +228,7 @@
 - (IBAction)cueDeck:(UIButton *)sender {
     if (!sender.isSelected) {
         BOOL shouldCue = NO;
+        //Create new TAAE channel to play cued audio
         _cueGroup = [_controller createChannelGroup];
         switch (sender.tag) {
             case 0: {
@@ -250,6 +257,7 @@
             }
         }
         if (shouldCue) {
+            //Change image if it's selected
             [sender setSelected:YES];
         }
     } else {
@@ -287,6 +295,7 @@
 - (IBAction)recordButtonPressed:(UIButton *)sender {
     if ([sender isSelected]) {
         [sender setSelected:NO];
+        //Remove the output from the main output from the recorder
         [_controller removeOutputReceiver:_recorder fromChannelGroup:_mainGroup];
         [_recorder finishRecording];
         self.recorder = nil;
@@ -305,6 +314,7 @@
             // Report error
             return;
         }
+        //Add the output from the main output to the recorder
         [_controller addOutputReceiver:_recorder forChannelGroup:_mainGroup];
         [sender setSelected:YES];
     }
@@ -340,6 +350,7 @@
 
 -(void)setupPans
 {
+    //Create pan gestures for the faders
     UIPanGestureRecognizer *fadpan1 = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(fadPan1:)];
     [self.Fader1 addGestureRecognizer:fadpan1];
     UIPanGestureRecognizer *fadpan2 = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(fadPan2:)];
@@ -492,27 +503,6 @@
                 self.selectedChannel = self.deck2;
                 break;
             case 2:
-                if ([self.selectedSection isEqualToString:@"Other"]) {
-                    NSError * error;
-                    // retrieve the store URL
-                    NSURL * storeURL = [[self.managedObjectContext persistentStoreCoordinator] URLForPersistentStore:[[[self.managedObjectContext persistentStoreCoordinator] persistentStores] lastObject]];
-                    // lock the current context
-                    [self.managedObjectContext lock];
-                    [self.managedObjectContext reset];//to drop pending changes
-                    //delete the store from the current managedObjectContext
-                    if ([[self.managedObjectContext persistentStoreCoordinator] removePersistentStore:[[[self.managedObjectContext persistentStoreCoordinator] persistentStores] lastObject] error:&error])
-                    {
-                        // remove the file containing the data
-                        [[NSFileManager defaultManager] removeItemAtURL:storeURL error:&error];
-                        //recreate the store like in the  appDelegate method
-                        [[self.managedObjectContext persistentStoreCoordinator] addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error];//recreates the persistent store
-                    }
-                    [self.managedObjectContext unlock];
-                    self.playlists = nil;
-                    self.loadedPlaylist = nil;
-                    [[NSUserDefaults standardUserDefaults] setObject:self.playlists forKey:@"playlists"];
-                    [[NSUserDefaults standardUserDefaults] setObject:self.loadedPlaylist forKey:@"loadedPlaylist"];
-                }
                 self.selectedChannel = self.deck3;
                 break;
         }
@@ -537,6 +527,7 @@
 #pragma mark - Channel quick
 
 - (void)updateQuickView {
+    //Update the quick/detail view to show changes
     if (self.selectedChannel.filePlayer.channelIsPlaying) {
         [self.PlayPauseButton setBackgroundImage:[UIImage imageNamed:@"pauseButton"] forState:UIControlStateNormal];
         [[self.deckPlayPause objectAtIndex:self.selectedChannel.tag] setSelected:YES];
