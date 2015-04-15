@@ -542,6 +542,12 @@
         case NSFetchedResultsChangeDelete:
             [tableView deleteSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
             break;
+            
+        case NSFetchedResultsChangeMove:
+            break;
+            
+        case NSFetchedResultsChangeUpdate:
+            break;
     }
 }
 
@@ -561,7 +567,7 @@
             break;
             
         case NSFetchedResultsChangeUpdate:
-            [self fetchedResultsController:controller configureCell:[tableView cellForRowAtIndexPath:indexPath] atIndexPath:indexPath];
+            [self fetchedResultsController:controller configureCell:(ItemCell*)[tableView cellForRowAtIndexPath:indexPath] atIndexPath:indexPath];
             break;
             
         case NSFetchedResultsChangeMove:

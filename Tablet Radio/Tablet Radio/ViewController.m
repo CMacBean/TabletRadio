@@ -29,7 +29,6 @@
 #import "UITesterController.h"
 
 @interface ViewController ()
-@property (strong, nonatomic) AppDelegate *app;
 @property (strong, nonatomic) UIButton *Fader1;
 @property (strong, nonatomic) UIButton *Fader2;
 @property (strong, nonatomic) UIButton *Fader3;
@@ -67,6 +66,9 @@
 @property (strong, nonatomic) NSString *loadedPlaylist;
 @property (strong, nonatomic) IBOutletCollection(UIActivityIndicatorView) NSArray *activiyView;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *saveButtons;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *deckPlayPause;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *deckLoop;
+
 - (void)fetchedResultsController:(NSFetchedResultsController *)controller configureCell:(ItemCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 
 @end
@@ -158,11 +160,11 @@
     
     [self.searchBar setDelegate:self];
     
-    // TESTER CODE
-    testView = [[UITesterController alloc] initWithFrame:self.view.bounds];
-    [testView setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
-    [testView setHidden:YES];
-    [self.view addSubview:testView];
+    // TESTER CODE (Uncomment to run)
+    //testView = [[UITesterController alloc] initWithFrame:self.view.bounds];
+    //[testView setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
+    //[testView setHidden:YES];
+    //[self.view addSubview:testView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -537,8 +539,10 @@
 - (void)updateQuickView {
     if (self.selectedChannel.filePlayer.channelIsPlaying) {
         [self.PlayPauseButton setBackgroundImage:[UIImage imageNamed:@"pauseButton"] forState:UIControlStateNormal];
+        [[self.deckPlayPause objectAtIndex:self.selectedChannel.tag] setSelected:YES];
     } else {
         [self.PlayPauseButton setBackgroundImage:[UIImage imageNamed:@"playButton"] forState:UIControlStateNormal];
+        [[self.deckPlayPause objectAtIndex:self.selectedChannel.tag] setSelected:NO];
     }
     Track *track = self.selectedChannel.playingItem;
     if (track) {
@@ -550,17 +554,40 @@
     }
     if (self.selectedChannel.filePlayer.loop) {
         [self.loopButton setSelected:YES];
+        [[self.deckLoop objectAtIndex:self.selectedChannel.tag] setSelected:YES];
     } else {
         [self.loopButton setSelected:NO];
+        [[self.deckLoop objectAtIndex:self.selectedChannel.tag] setSelected:NO];
     }
 }
 
 - (IBAction)playPause:(UIButton *)sender {
-    if (self.selectedChannel.playingItem != nil) {
-        if (self.selectedChannel.filePlayer.channelIsPlaying) {
-            [self.selectedChannel pause];
+    Deck *deck;
+    switch (sender.tag) {
+        case 0:
+            deck = self.deck1;
+            break;
+            
+        case 1:
+            deck = self.deck2;
+            break;
+            
+        case 2:
+            deck = self.deck3;
+            break;
+            
+        case 3:
+            deck = self.selectedChannel;
+            break;
+    }
+    
+    if (deck.playingItem != nil) {
+        if (deck.filePlayer.channelIsPlaying) {
+            [deck pause];
+            [[self.deckPlayPause objectAtIndex:deck.tag] setSelected:NO];
         } else {
-            [self.selectedChannel play];
+            [deck play];
+            [[self.deckPlayPause objectAtIndex:deck.tag] setSelected:YES];
         }
         [myTableView reloadData];
     }
@@ -620,7 +647,23 @@
     } else {
         [sender setSelected:YES];
     }
-    [self.selectedChannel loopItem];
+    Deck *deck;
+    switch (sender.tag) {
+        case 0:
+            deck = self.deck1;
+            break;
+        case 1:
+            deck = self.deck2;
+            break;
+        case 2:
+            deck = self.deck3;
+            break;
+        case 3:
+            deck = self.selectedChannel;
+            break;
+    }
+    [deck loopItem];
+    [self updateQuickView];
 }
 
 #pragma mark - Deck Displays
@@ -1059,6 +1102,12 @@
             
         case NSFetchedResultsChangeDelete:
             [myTableView deleteSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
+            break;
+            
+        case NSFetchedResultsChangeMove:
+            break;
+            
+        case NSFetchedResultsChangeUpdate:
             break;
     }
 }

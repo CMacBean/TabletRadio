@@ -2644,7 +2644,7 @@ static void interAppConnectedChangeCallback(void *inRefCon, AudioUnit inUnit, Au
     // Only update if graph is running
     if ( self.running ) {
         // Retry a few times (as sometimes the graph will be in the wrong state to update)
-        OSStatus err;
+        OSStatus err = 0;
         for ( int retry=0; retry<6; retry++ ) {
             err = AUGraphUpdate(_audioGraph, NULL);
             if ( err != kAUGraphErr_CannotDoInCurrentContext ) break;

@@ -66,7 +66,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="ofc-F3-m4t">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76x-cp-FgZ">
+                            <button hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76x-cp-FgZ">
                                 <rect key="frame" x="805" y="29" width="52" height="51"/>
                                 <state key="normal" backgroundImage="playButton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -420,7 +420,7 @@
                                 <rect key="frame" x="544" y="110" width="20" height="20"/>
                                 <color key="color" red="0.086274512110000007" green="0.62745100259999997" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUG-Nb-SU0">
+                            <button hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUG-Nb-SU0">
                                 <rect key="frame" x="962" y="20" width="46" height="40"/>
                                 <state key="normal" backgroundImage="loopButtonUnSelected">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -470,7 +470,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zoD-eT-J8Z">
-                                <rect key="frame" x="497" y="195" width="44" height="44"/>
+                                <rect key="frame" x="484" y="195" width="44" height="44"/>
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="20"/>
                                 <state key="normal" backgroundImage="ejectButton">
                                     <color key="titleColor" red="0.059465010630000002" green="0.1064742345" blue="0.3341836735" alpha="1" colorSpace="calibratedRGB"/>
@@ -481,7 +481,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9l-k5-HA4">
-                                <rect key="frame" x="341" y="195" width="44" height="44"/>
+                                <rect key="frame" x="328" y="195" width="44" height="44"/>
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="20"/>
                                 <state key="normal" backgroundImage="ejectButton">
                                     <color key="titleColor" red="0.059465010630000002" green="0.1064742345" blue="0.3341836735" alpha="1" colorSpace="calibratedRGB"/>
@@ -492,7 +492,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUn-6h-cFB">
-                                <rect key="frame" x="185" y="195" width="44" height="44"/>
+                                <rect key="frame" x="172" y="195" width="44" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" backgroundImage="ejectButton">
                                     <color key="titleColor" red="0.059465010630000002" green="0.1064742345" blue="0.3341836735" alpha="1" colorSpace="calibratedRGB"/>
@@ -502,12 +502,6 @@
                                     <action selector="ejectItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rt9-YA-MeX"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select a track/playlist item, then tap a deck to play it" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Za-D1-Sg6">
-                                <rect key="frame" x="643" y="5" width="363" height="175"/>
-                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="32"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z82-PI-Gnm">
                                 <rect key="frame" x="634" y="235" width="379" height="49"/>
                                 <state key="normal" backgroundImage="Cell">
@@ -519,22 +513,70 @@
                                 <color key="barTintColor" red="0.96958636470000004" green="1" blue="0.98545355320000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Eject" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8SY-Cc-FKJ">
-                                <rect key="frame" x="218" y="198" width="74" height="37"/>
-                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="23"/>
-                                <color key="textColor" red="0.059465010630000002" green="0.1064742345" blue="0.3341836735" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Eject" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5f9-1Q-4EK">
-                                <rect key="frame" x="373" y="198" width="74" height="37"/>
-                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="23"/>
-                                <color key="textColor" red="0.059465010630000002" green="0.1064742345" blue="0.3341836735" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Eject" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vmw-bp-tRN">
-                                <rect key="frame" x="528" y="198" width="74" height="37"/>
-                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="23"/>
-                                <color key="textColor" red="0.059465010630000002" green="0.1064742345" blue="0.3341836735" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFC-2L-qxI">
+                                <rect key="frame" x="222" y="199" width="36" height="35"/>
+                                <state key="normal" backgroundImage="playButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="pauseButton"/>
+                                <connections>
+                                    <action selector="playPause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="43c-em-XZ7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYf-Cs-VJQ">
+                                <rect key="frame" x="377" y="199" width="36" height="35"/>
+                                <state key="normal" backgroundImage="playButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="pauseButton"/>
+                                <connections>
+                                    <action selector="playPause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7JC-4o-Cob"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YmM-NJ-Qqe">
+                                <rect key="frame" x="534" y="199" width="36" height="35"/>
+                                <state key="normal" backgroundImage="playButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="pauseButton"/>
+                                <connections>
+                                    <action selector="playPause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sfH-cg-9OF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjz-Zw-QYh">
+                                <rect key="frame" x="264" y="198" width="38" height="37"/>
+                                <state key="normal" backgroundImage="loopButtonUnSelected">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="loopButton"/>
+                                <connections>
+                                    <action selector="loopButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ADk-Dc-RWI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEq-wZ-6k2">
+                                <rect key="frame" x="421" y="198" width="38" height="37"/>
+                                <state key="normal" backgroundImage="loopButtonUnSelected">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="loopButton"/>
+                                <connections>
+                                    <action selector="loopButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mTx-4A-Oy9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYV-sh-znG">
+                                <rect key="frame" x="577" y="198" width="38" height="37"/>
+                                <state key="normal" backgroundImage="loopButtonUnSelected">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="loopButton"/>
+                                <connections>
+                                    <action selector="loopButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rgn-Is-MmJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select a track/playlist item, then tap a deck to play it" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Za-D1-Sg6">
+                                <rect key="frame" x="648" y="2" width="363" height="175"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -572,6 +614,12 @@
                         <outletCollection property="saveButtons" destination="ysF-Qt-UYX" id="5wz-US-8v5"/>
                         <outletCollection property="saveButtons" destination="orT-ut-XZi" id="Xht-ii-nLm"/>
                         <outletCollection property="saveButtons" destination="OB1-qO-w7G" id="UyU-Yc-xBt"/>
+                        <outletCollection property="deckPlayPause" destination="GFC-2L-qxI" id="eDs-T4-nvv"/>
+                        <outletCollection property="deckPlayPause" destination="VYf-Cs-VJQ" id="3zj-uW-d7q"/>
+                        <outletCollection property="deckPlayPause" destination="YmM-NJ-Qqe" id="B98-bb-w72"/>
+                        <outletCollection property="deckLoop" destination="wjz-Zw-QYh" id="Svt-P6-KiV"/>
+                        <outletCollection property="deckLoop" destination="SEq-wZ-6k2" id="YtK-j3-Eid"/>
+                        <outletCollection property="deckLoop" destination="bYV-sh-znG" id="TnT-XC-kGf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -907,6 +955,7 @@
         <image name="loopButtonUnSelected" width="44" height="44"/>
         <image name="onAirFalse" width="97" height="37"/>
         <image name="onAirTrue" width="97" height="37"/>
+        <image name="pauseButton" width="42" height="42"/>
         <image name="playButton" width="42" height="42"/>
         <image name="saveButton" width="44" height="44"/>
         <image name="settingsButton" width="103" height="122"/>
