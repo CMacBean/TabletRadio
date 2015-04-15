@@ -657,12 +657,6 @@
                                     <outlet property="delegate" destination="l9s-zu-n4G" id="S8A-tJ-IFa"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose items from the right, Then press 'Add' to move them to the Playlist" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5c-jm-L2M">
-                                <rect key="frame" x="44" y="254" width="284" height="305"/>
-                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="30"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsMultipleSelection="YES" rowHeight="91" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="a9g-Zz-WR4">
                                 <rect key="frame" x="391" y="106" width="366" height="632"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -768,6 +762,12 @@
                                     <action selector="addNewPlaylist:" destination="l9s-zu-n4G" eventType="touchUpInside" id="w22-7a-KJM"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shS-J3-Awd">
+                                <rect key="frame" x="51" y="299" width="284" height="305"/>
+                                <state key="normal" backgroundImage="playlistText">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -776,7 +776,7 @@
                     <connections>
                         <outlet property="PlaylistTableView" destination="OKj-Va-p2f" id="qYR-Qo-Kbr"/>
                         <outlet property="TableView" destination="a9g-Zz-WR4" id="XpA-in-s9V"/>
-                        <outlet property="messageLabel" destination="n5c-jm-L2M" id="ir1-89-pne"/>
+                        <outlet property="messageLabel" destination="shS-J3-Awd" id="R8Y-ik-8ic"/>
                         <outlet property="playlistTableView" destination="OKj-Va-p2f" id="OSZ-gk-Qc2"/>
                         <outlet property="searchBar" destination="vgb-Bh-0y0" id="fh5-Cg-T00"/>
                         <outlet property="secondSegmentedController" destination="Tp6-iu-kUv" id="hxb-Ym-5T4"/>
@@ -957,6 +957,7 @@
         <image name="onAirTrue" width="97" height="37"/>
         <image name="pauseButton" width="42" height="42"/>
         <image name="playButton" width="42" height="42"/>
+        <image name="playlistText" width="284" height="305"/>
         <image name="saveButton" width="44" height="44"/>
         <image name="settingsButton" width="103" height="122"/>
     </resources>

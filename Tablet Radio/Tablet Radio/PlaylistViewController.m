@@ -23,7 +23,7 @@
 @property (weak, nonatomic) IBOutlet UISegmentedControl *secondSegmentedController;
 @property (strong, nonatomic) NSString *selectedSection;
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
-@property (weak, nonatomic) IBOutlet UILabel *messageLabel;
+@property (weak, nonatomic) IBOutlet UIButton *messageLabel;
 @property (strong, nonatomic) NSString *sortBy;
 @property (nonatomic, strong) SortByController *sortPicker;
 @property (nonatomic, strong) UIPopoverController *sortPickerPopover;
