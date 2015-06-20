@@ -19,6 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.preferredContentSize = CGSizeMake(self.preferredContentSize.width, 420);
+
     self.defaults = [NSUserDefaults standardUserDefaults];
     [self.autoPlaySwitch setOn:[self.defaults boolForKey:@"autoPlay"]];
     [self.faderStartSwitch setOn:[self.defaults boolForKey:@"faderStart"]];

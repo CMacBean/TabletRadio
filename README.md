@@ -8,3 +8,5 @@ Currently a method of streaming using buffers has been found, however work is ne
 Audio can be either added via the devices iTunes music or imported from other apps and e-mail etc.
 
 The Amazing Audio Engine is used in this app to control the Core Audio and Audio Units.
+
+Default Apple Audio Units are currently used due to the time restraints for this project, however other AU plugins could have been created and used.
